@@ -26,7 +26,11 @@
  *         },
  *         showPage: function(routeInfo, id) {
  *              ...
- *         }
+ *         },
+ *         routeNotFound: function(routeInfo) {
+ *              ...
+ *         },
+ *    
  *    }); 
  */
 Ext.define('extjsclasses.utils.Router', {
