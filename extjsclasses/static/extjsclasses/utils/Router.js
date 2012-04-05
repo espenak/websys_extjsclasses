@@ -2,7 +2,14 @@
  * # Example
  *
  *     @example
- *     Ext.define('subjectadmin.Application', {
+ *     Ext.define('myapp.Application', {
+ *         extend: 'Ext.app.Application',
+ *         name: 'myapp',
+ *
+ *         requires: [
+ *             'extjsclasses.utils.Router'
+ *         ],
+ *     
  *         launch: function() {
  *             this.route = Ext.create('extjsclasses.Router', this);
  *             this.route.add("", 'dashboard');
@@ -22,7 +29,7 @@
  *         }
  *    }); 
  */
-Ext.define('extjsclasses.Router', {
+Ext.define('extjsclasses.utils.Router', {
     extend: 'Ext.util.Observable',
     requires: [
         'Ext.util.History'
